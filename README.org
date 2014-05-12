@@ -1,0 +1,5 @@
+* Welcome!
+  Documentation for the documentation! MEETTTAAAA...
+
+* To build the docs
+  
