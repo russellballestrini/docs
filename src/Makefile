@@ -51,7 +51,8 @@ clean:
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
-	rsync $(BUILDDIR)/html/* ../
+	rsync -r $(BUILDDIR)/html/* ../
+	rm -rf $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 	@echo "HTML has been rsynced to the root directory, too."
