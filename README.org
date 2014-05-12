@@ -1,5 +1,16 @@
 * Welcome!
   Documentation for the documentation! MEETTTAAAA...
 
+  For realsies though, this repository contains all of Curb's
+  important documentation, primarily for the Curb API, but for future
+  projects we will use this repository and domain [[http://docs.energycurb.com][docs.energycurb.com]]
+  to feed our documentation to you.
+
+* Edit / contribute to docs
+  Checkout this repository and start editing anything in =src/*.rst=;
+  the [[http://sphinx-doc.org/contents.html][Sphinx Docs]] are a great place to start too.
+
 * To build the docs
-  
+  Simply =cd src= and =make html=. The html docs will be generated
+  then rsync'ed to this root directory. Publishing only requires you
+  to commit and then push :)
