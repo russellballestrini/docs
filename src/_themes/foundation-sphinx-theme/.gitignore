@@ -1,0 +1,11 @@
+*.class
+*.pyc
+*.pyo
+.project
+.pydevproject
+.settings
+.sass-cache
+build/
+sample-project/build
+doctrees
+gh-page/
