@@ -45,7 +45,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Curb API'
+project = u'Curb'
 copyright = u'2014, Parnell Springmeyer'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -178,7 +178,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'CurbAPIdoc'
+htmlhelp_basename = 'Curbdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -198,7 +198,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ('index', 'CurbAPI.tex', u'Curb API Documentation',
+    ('index', 'Curb.tex', u'Curb Documentation',
      u'Parnell Springmeyer', 'manual'),
 ]
 
@@ -228,7 +228,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'curbapi', u'Curb API Documentation',
+    ('index', 'curb', u'Curb Documentation',
      [u'Parnell Springmeyer'], 1)
 ]
 
@@ -242,8 +242,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    ('index', 'CurbAPI', u'Curb API Documentation',
-     u'Parnell Springmeyer', 'CurbAPI', 'Curb API examples and documentation.',
+    ('index', 'Curb', u'Curb Documentation',
+     u'Parnell Springmeyer', 'Curb', 'Curb examples and documentation.',
      'Miscellaneous'),
 ]
 
