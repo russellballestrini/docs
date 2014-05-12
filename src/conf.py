@@ -15,6 +15,9 @@
 import sys
 import os
 
+sys.path[0:0] = [os.path.abspath('_themes/foundation-sphinx-theme')]
+extensions = ['sphinx.ext.autodoc', 'foundation']
+
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
