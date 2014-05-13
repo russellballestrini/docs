@@ -2,13 +2,12 @@ Welcome to Curb's documentation!
 ================================
 
 .. toctree::
-   :titlesonly:
    :maxdepth: 2
 
    authentication
    units
    transformation
-   
+   read
 
 
 

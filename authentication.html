@@ -61,10 +61,17 @@
         
             <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="">API Authentication</a></li>
-<li class="toctree-l1"><a class="reference internal" href="units.html">Data Type Units</a><ul class="simple">
+<li class="toctree-l1"><a class="reference internal" href="units.html">Data Type Units</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="units.html#periodicity-and-time-ranges">Periodicity and Time Ranges</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="transformation.html">Transforming Time-Series Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="read.html">Reading Data from the API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="read.html#read-bulk">Read Bulk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="read.html#read-single">Read Single</a></li>
+<li class="toctree-l2"><a class="reference internal" href="read.html#read-summary">Read Summary</a></li>
+</ul>
+</li>
 </ul>
 
         
@@ -103,8 +110,13 @@
 <h1>API Authentication<a class="headerlink" href="#api-authentication" title="Permalink to this headline">¶</a></h1>
 <p>Authentication for version one of the Curb API is simple and only
 requires the explicit generation of an API key and API secret that are
-base64 encoded and used in the <tt class="docutils literal"><span class="pre">Authorization:</span> <span class="pre">Basic</span>
-<span class="pre">QWxhZGRpbjpvcGVuIHNlc2FtZQ==</span></tt></p>
+base64 encoded and used in the <tt class="docutils literal"><span class="pre">Authorization:</span> <span class="pre">Basic</span></tt> header.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Future versions of the Curb API <strong>may</strong> employ the OAuth 2.0
+standard over Basic Authorization for flexibility with
+permissions and stronger ACL security.</p>
+</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">cURL automatically Base64 encodes the authorization header for you!</p>

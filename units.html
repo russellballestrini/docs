@@ -61,10 +61,17 @@
         
             <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="authentication.html">API Authentication</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Data Type Units</a><ul class="simple">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Data Type Units</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#periodicity-and-time-ranges">Periodicity and Time Ranges</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="transformation.html">Transforming Time-Series Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="read.html">Reading Data from the API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="read.html#read-bulk">Read Bulk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="read.html#read-single">Read Single</a></li>
+<li class="toctree-l2"><a class="reference internal" href="read.html#read-summary">Read Summary</a></li>
+</ul>
+</li>
 </ul>
 
         
@@ -103,11 +110,43 @@
 <h1>Data Type Units<a class="headerlink" href="#data-type-units" title="Permalink to this headline">¶</a></h1>
 <p>The units of data stored by Curb is <strong>Watts</strong>, <strong>Milli-Volt</strong>, and <strong>Volt
 Ampere</strong>. The primary unit value most users will be reading from the
-API will be in Watts, however.</p>
-<p>Basic transformations on the units of the values can be specified in
-the requests to the API, please refer to <a class="reference internal" href="transformation.html"><em>Transforming Time-Series Data</em></a>.</p>
+API is Watts.</p>
+<p>Basic transformations (converting to kw or kWh) on the units of the
+values can be specified in the requests to the API, please refer to
+<a class="reference internal" href="transformation.html"><em>Transforming Time-Series Data</em></a>.</p>
 <div class="section" id="periodicity-and-time-ranges">
 <h2>Periodicity and Time Ranges<a class="headerlink" href="#periodicity-and-time-ranges" title="Permalink to this headline">¶</a></h2>
+<p>When specifying the <strong>periodicity</strong> of a range request the <a class="reference external" href="http://en.wikipedia.org/wiki/ISO_8601#Durations">ISO 8601
+Time Durations</a>
+standard is recognized; the default will always be one hour (<tt class="docutils literal"><span class="pre">PT1H</span></tt>)
+if not specified.</p>
+<p>Some common examples of periodicity specifications:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="58%" />
+<col width="42%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>One Minute</td>
+<td><tt class="docutils literal"><span class="pre">PT1M</span></tt></td>
+</tr>
+<tr class="row-even"><td>Five Minutes</td>
+<td><tt class="docutils literal"><span class="pre">PT5M</span></tt></td>
+</tr>
+<tr class="row-odd"><td>One Hour</td>
+<td><tt class="docutils literal"><span class="pre">PT1H</span></tt></td>
+</tr>
+<tr class="row-even"><td>One Day</td>
+<td><tt class="docutils literal"><span class="pre">P1D</span></tt></td>
+</tr>
+<tr class="row-odd"><td>Seven Days</td>
+<td><tt class="docutils literal"><span class="pre">P7D</span></tt></td>
+</tr>
+<tr class="row-even"><td>One Week</td>
+<td><tt class="docutils literal"><span class="pre">P1W</span></tt></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
