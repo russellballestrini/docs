@@ -8,7 +8,9 @@ QWxhZGRpbjpvcGVuIHNlc2FtZQ==``
 
 .. note:: cURL automatically Base64 encodes the authorization header for you!
 
-Here is a basic example in Python that returns a list of series::
+Here is a basic example in Python that returns a list of series:
+
+.. code-block:: python
 
     import requests
     user = "4f//y1YFy5PpFLW"

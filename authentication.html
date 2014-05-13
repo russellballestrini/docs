@@ -110,16 +110,16 @@ base64 encoded and used in the <tt class="docutils literal"><span class="pre">Au
 <p class="last">cURL automatically Base64 encodes the authorization header for you!</p>
 </div>
 <p>Here is a basic example in Python that returns a list of series:</p>
-<div class="highlight-python"><div class="highlight"><pre>import requests
-user = &quot;4f//y1YFy5PpFLW&quot;
-pass = &quot;GrSCMg45heb7Y.IK.iogIOeQAi2C4yb./iPT6hnZ5UZwpTS1z4qWu&quot;
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">user</span> <span class="o">=</span> <span class="s">&quot;4f//y1YFy5PpFLW&quot;</span>
+<span class="k">pass</span> <span class="o">=</span> <span class="s">&quot;GrSCMg45heb7Y.IK.iogIOeQAi2C4yb./iPT6hnZ5UZwpTS1z4qWu&quot;</span>
 
-# This is important, it defines the API version and return format
-accept = &quot;application/vnd.curb.v1+json&quot;
+<span class="c"># This is important, it defines the API version and return format</span>
+<span class="n">accept</span> <span class="o">=</span> <span class="s">&quot;application/vnd.curb.v1+json&quot;</span>
 
-r = requests.get(&quot;https://api.energycurb.com/series&quot;,
-                 auth=(key, sec),
-                 headers={&quot;accept&quot;: accept})
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;https://api.energycurb.com/series&quot;</span><span class="p">,</span>
+                 <span class="n">auth</span><span class="o">=</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">sec</span><span class="p">),</span>
+                 <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;accept&quot;</span><span class="p">:</span> <span class="n">accept</span><span class="p">})</span>
 </pre></div>
 </div>
 </div>
