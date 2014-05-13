@@ -3,8 +3,7 @@ API Authentication
 
 Authentication for version one of the Curb API is simple and only
 requires the explicit generation of an API key and API secret that are
-base64 encoded and used in the ``Authorization: Basic
-QWxhZGRpbjpvcGVuIHNlc2FtZQ==``
+base64 encoded and used in the ``Authorization: Basic`` header.
 
 .. note:: cURL automatically Base64 encodes the authorization header for you!
 
