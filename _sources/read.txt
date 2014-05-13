@@ -35,7 +35,7 @@ rollup function, and (optional) transformation function.
 
 Example
 ^^^^^^^^
-.. centered:: GET /series/key/key1/segment/?start=2012-01-08&end=2012-01-09&period=6hour&fold=mean&interpolate=linear
+.. centered:: GET /series/key/key1/segment/?start=2012-01-08&end=2012-01-09&period=PT6H&fold=mean&interpolate=linear
 
 .. code-block:: javascript
 
@@ -82,14 +82,16 @@ Example
 Read Bulk
 ---------
 
+.. warning:: This method is not implemented for public consumption yet
+             but will be soon.
+
 Read from multiple series' using the given periodicity, time range,
 rollup function, and (optional) transformation function.
-
-.. centered:: GET /multi/
 
 Read Summary
 ------------
 
-**Not Implemented**
+.. warning:: This method is not implemented for public consumption yet
+             but will be soon.
 
 Request a aggregate statistics on a specific series key.

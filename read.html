@@ -31,7 +31,7 @@
 
   
     <link rel="top" title="Curb 1.0 documentation" href="index.html"/>
-        <link rel="prev" title="Transforming Time-Series Data" href="transformation.html"/> 
+        <link rel="prev" title="Data Type Units" href="units.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -64,7 +64,6 @@
 <li class="toctree-l2"><a class="reference internal" href="units.html#periodicity-and-time-ranges">Periodicity and Time Ranges</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="transformation.html">Transforming Time-Series Data</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">Reading Data from the API</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#read-single">Read Single</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#read-bulk">Read Bulk</a></li>
@@ -152,7 +151,7 @@ rollup function, and (optional) transformation function.</p>
 <div class="section" id="example">
 <h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
 <p class="centered">
-<strong>GET /series/key/key1/segment/?start=2012-01-08&amp;end=2012-01-09&amp;period=6hour&amp;fold=mean&amp;interpolate=linear</strong></p><div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
+<strong>GET /series/key/key1/segment/?start=2012-01-08&amp;end=2012-01-09&amp;period=PT6H&amp;fold=mean&amp;interpolate=linear</strong></p><div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
    <span class="s2">&quot;series&quot;</span><span class="o">:</span><span class="p">{</span>
       <span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="s2">&quot;01868c1a2aaf416ea6cd8edd65e7a4b8&quot;</span><span class="p">,</span>
       <span class="s2">&quot;key&quot;</span><span class="o">:</span><span class="s2">&quot;key1&quot;</span><span class="p">,</span>
@@ -196,13 +195,21 @@ rollup function, and (optional) transformation function.</p>
 </div>
 <div class="section" id="read-bulk">
 <h2>Read Bulk<a class="headerlink" href="#read-bulk" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This method is not implemented for public consumption yet
+but will be soon.</p>
+</div>
 <p>Read from multiple series&#8217; using the given periodicity, time range,
 rollup function, and (optional) transformation function.</p>
-<p class="centered">
-<strong>GET /multi/</strong></p></div>
+</div>
 <div class="section" id="read-summary">
 <h2>Read Summary<a class="headerlink" href="#read-summary" title="Permalink to this headline">¶</a></h2>
-<p><strong>Not Implemented</strong></p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This method is not implemented for public consumption yet
+but will be soon.</p>
+</div>
 <p>Request a aggregate statistics on a specific series key.</p>
 </div>
 </div>
@@ -214,7 +221,7 @@ rollup function, and (optional) transformation function.</p>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="transformation.html" class="btn btn-neutral" title="Transforming Time-Series Data"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="units.html" class="btn btn-neutral" title="Data Type Units"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

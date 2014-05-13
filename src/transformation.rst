@@ -1,2 +1,0 @@
-Transforming Time-Series Data
-=============================

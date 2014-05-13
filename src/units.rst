@@ -7,7 +7,7 @@ API is Watts.
 
 Basic transformations (converting to kw or kWh) on the units of the
 values can be specified in the requests to the API, please refer to
-:doc:`transformation`.
+:doc:`read`.
 
 Periodicity and Time Ranges
 ---------------------------
