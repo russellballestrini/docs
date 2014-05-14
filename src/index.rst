@@ -4,6 +4,7 @@ Welcome to Curb's documentation!
 .. toctree::
    :maxdepth: 2
 
+   overview
    authentication
    units
    read

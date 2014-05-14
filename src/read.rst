@@ -12,8 +12,8 @@ returned per-request.*
 Read Single
 -----------
 
-Read from multiple series' using the given periodicity, time range,
-rollup function, and (optional) transformation function.
+Read from a single series using its key, a given periodicity, time
+range, rollup function, and (optional) transformation function.
 
 .. centered:: GET /series/key/{key}/segment/
 
